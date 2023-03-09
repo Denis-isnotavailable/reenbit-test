@@ -1,6 +1,7 @@
-import { SearchStyled } from "./Search.styled";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
+
+import { SearchStyled } from "./Search.styled";
 import { selectSearch } from "redux/selectors";
 import { searchSet } from "redux/searchSlice";
 

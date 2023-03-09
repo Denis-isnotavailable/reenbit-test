@@ -12,6 +12,7 @@ import {
 
 import { charactersReducer } from "./charactersSlice";
 import { searchReducer } from "./searchSlice";
+import { authReducer } from "./authSlice";
 
 const persistConfig = {
     key: 'roots',
@@ -21,7 +22,8 @@ const persistConfig = {
 export const store = configureStore({
     reducer: {
         charactersReducer,
-        searchReducer: persistReducer(persistConfig, searchReducer)
+        searchReducer: persistReducer(persistConfig, searchReducer),
+        authReducer: persistReducer(persistConfig, authReducer)
     },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({
     serializableCheck: {

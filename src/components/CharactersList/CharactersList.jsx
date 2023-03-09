@@ -9,15 +9,11 @@ import { selectFilteredCharacters } from "redux/selectors";
 
 const CharactersList = () => {
     const dispatch = useDispatch();
-    const characters = useSelector(selectFilteredCharacters);
-    // const isLoading = useSelector(selectIsLoading);
-
+    const characters = useSelector(selectFilteredCharacters);   
 
     useEffect(() => { 
         dispatch(fetchCharacters());
     }, [dispatch]);
-
-    // console.log(characters);
 
     return (
         <CharactersListStyled>

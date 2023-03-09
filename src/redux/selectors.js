@@ -6,6 +6,8 @@ export const selectCharacters = state => state.charactersReducer.characters;
 
 export const selectSearch = state => state.searchReducer.search;
 
+export const selectAuth = state => state.authReducer;
+
 export const selectFilteredCharacters = createSelector(
     [selectCharacters, selectSearch], (characters, search) => {
 

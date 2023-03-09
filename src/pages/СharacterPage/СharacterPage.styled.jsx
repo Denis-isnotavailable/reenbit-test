@@ -116,9 +116,7 @@ export const CharacterImageThumbStyled = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 28px;
-    /* border-radius: 50%; */
-
-    /* background: url(.jpg); */
+    
     border: 5px solid #dbdbdf;
     border-radius: 150px;
 
